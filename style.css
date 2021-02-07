@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, red, blue);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+
+}
+
+header {
+    font-size: 2rem;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    border: black solid 0.1rem;
+    background: white;
+}
+
+form button {
+    color: #c2003e;
+    background: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+form button:hover {
+    background: #c2003e;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.todo li {
+    flex: 1;
+    overflow-wrap: break-word;
+    max-width: 93%;
+}
+
+.deleted-btn1,
+.complete-btn {
+    background: #c2003e;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0;
+
+}
+
+.complete-btn {
+    background: lawngreen;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completebtn {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.deletedbtn {
+    transform: translateY(6rem) rotateZ(30deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #c2003e;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1.1rem;
+
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #c2003e;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+
+.select:hover::after {
+    background: white;
+    color: #c2003e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
